@@ -7,7 +7,7 @@ import { Contact } from './pages/Contact';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/ShivArmor">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
