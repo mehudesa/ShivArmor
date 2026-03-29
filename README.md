@@ -18,3 +18,15 @@ View your app in AI Studio: https://ai.studio/apps/e51efc51-fa09-434b-8f64-b5c42
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Deploy to GitHub Pages
+
+GitHub Pages must serve the built app, not the source files in the repo root.
+
+1. Build the site:
+   `npm run build`
+2. In GitHub, open your repository Settings > Pages.
+3. Set the deployment source to `Deploy from a branch`.
+4. Select your main branch and the `/docs` folder.
+
+This project builds with relative asset paths and hash-based routing so it works correctly on GitHub Pages.
