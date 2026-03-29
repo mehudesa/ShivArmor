@@ -3,11 +3,309 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ShivArmor IT Solutions builds secure storage, networking, and remote access systems for small businesses that need dependable infrastructure without enterprise overhead."
+    />
     <title>ShivArmor IT Solutions LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./script.js"></script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="src/main.tsx"></script>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand" href="#top" aria-label="ShivArmor home">
+            <span class="brand-mark" aria-hidden="true">S</span>
+            <span class="brand-text">
+              <strong>ShivArmor IT</strong>
+              <span>Secure infrastructure for small business</span>
+            </span>
+          </a>
+
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-navigation"
+            data-menu-button
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </button>
+
+          <nav class="nav" id="site-navigation" data-navigation>
+            <ul class="nav-links">
+              <li><a href="#services" data-nav-link>Services</a></li>
+              <li><a href="#approach" data-nav-link>Approach</a></li>
+              <li><a href="#about" data-nav-link>About</a></li>
+              <li><a href="#contact" data-nav-link>Contact</a></li>
+            </ul>
+            <a class="button" href="#contact" data-nav-link>Free Consultation</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <span class="eyebrow">Enterprise IT made simple</span>
+              <h1>Reliable IT infrastructure without enterprise complexity.</h1>
+              <p>
+                ShivArmor helps small businesses deploy secure storage, stable networks,
+                and remote access systems that are easy to manage, resilient under load,
+                and built around how your team actually works.
+              </p>
+              <div class="hero-actions">
+                <a class="button" href="#contact">Book a Consultation</a>
+                <a class="button-ghost" href="#services">See Services</a>
+              </div>
+            </div>
+
+            <aside class="hero-card" aria-label="Core offer overview">
+              <span class="signal"><span class="signal-dot"></span>Security-first design</span>
+              <ul class="hero-list">
+                <li>
+                  <span class="check">+</span>
+                  NAS deployment, backup strategy, and structured access control.
+                </li>
+                <li>
+                  <span class="check">+</span>
+                  Network cleanup, VLAN planning, VPN rollout, and remote support access.
+                </li>
+                <li>
+                  <span class="check">+</span>
+                  Practical guidance for small teams that need stable systems, not overhead.
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        <section class="stats" aria-label="Business outcomes">
+          <div class="container stats-grid">
+            <article class="stat">
+              <strong>Secure storage</strong>
+              <span>NAS design, redundancy planning, and backup workflows that fit daily operations.</span>
+            </article>
+            <article class="stat">
+              <strong>Smarter networks</strong>
+              <span>Clean switching, router setup, segmentation, and reliable remote access for staff.</span>
+            </article>
+            <article class="stat">
+              <strong>Simple support</strong>
+              <span>Clear recommendations, direct communication, and systems your team can actually use.</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="services">
+          <div class="container">
+            <div class="section-heading">
+              <h2>Core services for businesses that need dependable systems.</h2>
+              <p>
+                The site is intentionally simple because the offer is straightforward: build
+                secure infrastructure, remove weak spots, and leave your team with a setup they can trust.
+              </p>
+            </div>
+
+            <div class="services-grid">
+              <article class="service-card">
+                <div class="service-icon" aria-hidden="true">01</div>
+                <h3>NAS and backup systems</h3>
+                <p>Synology, UGREEN, and similar platforms configured for redundancy, permissions, local backup, and off-site recovery.</p>
+                <ul class="service-list">
+                  <li><span class="check">+</span>RAID planning and storage sizing</li>
+                  <li><span class="check">+</span>Automated backup scheduling</li>
+                  <li><span class="check">+</span>Cloud sync where it makes sense</li>
+                </ul>
+              </article>
+
+              <article class="service-card">
+                <div class="service-icon" aria-hidden="true">02</div>
+                <h3>Identity and access management</h3>
+                <p>Practical domain and user management so the right people can access the right systems without workarounds.</p>
+                <ul class="service-list">
+                  <li><span class="check">+</span>Active Directory and policy setup</li>
+                  <li><span class="check">+</span>User lifecycle and permissions</li>
+                  <li><span class="check">+</span>MFA-ready security posture</li>
+                </ul>
+              </article>
+
+              <article class="service-card">
+                <div class="service-icon" aria-hidden="true">03</div>
+                <h3>VPN and remote access</h3>
+                <p>Secure access for hybrid teams without exposing internal systems or creating fragile ad hoc fixes.</p>
+                <ul class="service-list">
+                  <li><span class="check">+</span>Business VPN deployment</li>
+                  <li><span class="check">+</span>Firewall and segmentation review</li>
+                  <li><span class="check">+</span>Encrypted remote workflows</li>
+                </ul>
+              </article>
+
+              <article class="service-card">
+                <div class="service-icon" aria-hidden="true">04</div>
+                <h3>Network and infrastructure refresh</h3>
+                <p>Router, switching, Wi-Fi, and layout improvements that reduce friction and make the network easier to maintain.</p>
+                <ul class="service-list">
+                  <li><span class="check">+</span>VLAN and traffic separation</li>
+                  <li><span class="check">+</span>Performance and stability tuning</li>
+                  <li><span class="check">+</span>Hardware planning and cleanup</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="approach">
+          <div class="container">
+            <div class="section-heading">
+              <h2>A practical engagement model.</h2>
+              <p>
+                Small businesses usually do not need a giant transformation project. They need a clear assessment,
+                a sensible rollout, and a support path that does not waste time.
+              </p>
+            </div>
+
+            <div class="approach-grid">
+              <article class="approach-card">
+                <h3>How projects move</h3>
+                <ol>
+                  <li>Review the current setup and identify risk, bottlenecks, and immediate wins.</li>
+                  <li>Prioritize a simple architecture that supports current needs and future growth.</li>
+                  <li>Deploy in manageable phases with as little disruption as possible.</li>
+                  <li>Leave documentation, access clarity, and next-step recommendations.</li>
+                </ol>
+              </article>
+
+              <article class="approach-card">
+                <h3>Why clients choose ShivArmor</h3>
+                <ul class="approach-list">
+                  <li><span class="check">+</span>Security is part of the design, not an afterthought.</li>
+                  <li><span class="check">+</span>Recommendations are shaped for small business budgets and team size.</li>
+                  <li><span class="check">+</span>Communication stays direct and implementation stays focused.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="about">
+          <div class="container about-grid">
+            <div class="about-copy">
+              <div class="section-heading">
+                <h2>Built for companies that need real infrastructure, not a maze.</h2>
+              </div>
+              <p>
+                ShivArmor IT Solutions is centered on secure storage, networking, and dependable system design for small and mid-sized businesses.
+                The goal is not to over-engineer the environment. The goal is to make sure your systems are stable, protected, and straightforward to operate.
+              </p>
+              <div class="contact-actions">
+                <a class="button-secondary" href="tel:4846193499">Call 484.619.3499</a>
+                <a class="button-ghost" href="mailto:mehudesa@gmail.com">Email ShivArmor</a>
+              </div>
+            </div>
+
+            <div class="about-panels">
+              <article class="about-panel">
+                <div class="about-icon" aria-hidden="true">A</div>
+                <h3>Security first</h3>
+                <p>Access control, segmentation, backups, and sensible defaults are built into the plan from the start.</p>
+              </article>
+              <article class="about-panel">
+                <div class="about-icon" aria-hidden="true">B</div>
+                <h3>Simple by design</h3>
+                <p>Complexity is reduced wherever possible so your team can operate the environment without constant intervention.</p>
+              </article>
+              <article class="about-panel">
+                <div class="about-icon" aria-hidden="true">C</div>
+                <h3>Ready to scale</h3>
+                <p>The structure supports growth, remote work, and better resilience without needing a full rebuild later.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="contact">
+          <div class="container contact-grid">
+            <div class="contact-panel">
+              <h2>Start with a clear conversation.</h2>
+              <p>
+                Share what is breaking, what is risky, or what you want to improve. If a short review is enough, that will be clear quickly.
+                If a larger infrastructure refresh makes sense, the next steps can stay focused.
+              </p>
+
+              <div class="contact-grid">
+                <article class="contact-card">
+                  <div class="contact-icon" aria-hidden="true">P</div>
+                  <h3>Phone</h3>
+                  <p><a href="tel:4846193499">484.619.3499</a></p>
+                </article>
+                <article class="contact-card">
+                  <div class="contact-icon" aria-hidden="true">E</div>
+                  <h3>Email</h3>
+                  <p><a href="mailto:mehudesa@gmail.com">mehudesa@gmail.com</a></p>
+                </article>
+                <article class="contact-card">
+                  <div class="contact-icon" aria-hidden="true">L</div>
+                  <h3>Location</h3>
+                  <p>5505 Passion Flower Ln<br />Allentown PA 18104</p>
+                </article>
+                <article class="contact-card">
+                  <div class="contact-icon" aria-hidden="true">R</div>
+                  <h3>Response style</h3>
+                  <p>Direct recommendations, simple rollout plans, and no unnecessary platform sprawl.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="form-panel">
+              <form data-contact-form>
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required />
+                  </div>
+                  <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required />
+                  </div>
+                  <div class="field field-full">
+                    <label for="company">Company</label>
+                    <input id="company" name="company" type="text" />
+                  </div>
+                  <div class="field field-full">
+                    <label for="details">What do you need help with?</label>
+                    <textarea id="details" name="details" rows="7" required></textarea>
+                  </div>
+                </div>
+                <p class="form-note">Submitting opens your default email app with the message details filled in.</p>
+                <div class="form-actions">
+                  <button class="button" type="submit">Draft Consultation Email</button>
+                  <div class="form-status" aria-live="polite" data-form-status></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <span>ShivArmor IT Solutions LLC</span>
+          <span>© <span data-year></span> Secure infrastructure for small business.</span>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
 

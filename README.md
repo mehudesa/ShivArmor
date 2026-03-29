@@ -1,32 +1,24 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# ShivArmor Website
 
-# Run and deploy your AI Studio app
+This branch is a single-page static website built with plain HTML, CSS, and a small amount of JavaScript.
 
-This contains everything you need to run your app locally.
+## Local development
 
-View your app in AI Studio: https://ai.studio/apps/e51efc51-fa09-434b-8f64-b5c42c2a5057
+There is no build step.
 
-## Run Locally
+1. Open `index.html` in a browser, or
+2. Run a simple static server from the repository root if you want local navigation and form testing behavior.
 
-**Prerequisites:**  Node.js
+Example with Python:
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+`python3 -m http.server 3000`
 
 ## Deploy to GitHub Pages
 
-GitHub Pages must serve the built app, not the source files in the repo root.
+This repository deploys with GitHub Actions.
 
-1. Build the site:
-   `npm run build`
-2. In GitHub, open your repository Settings > Pages.
-3. Set the deployment source to `Deploy from a branch`.
-4. Select your main branch and the `/docs` folder.
+1. In GitHub, open `Settings` > `Pages`.
+2. Set the source to `GitHub Actions`.
+3. Push to `main` or `refactor/static-one-page` to trigger deployment.
 
-This project builds with relative asset paths and hash-based routing so it works correctly on GitHub Pages.
+The workflow publishes the static files directly from the repository root, so no bundler or generated `docs/` or `dist/` output is required.
